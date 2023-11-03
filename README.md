@@ -46,7 +46,7 @@ To run this project, you need to meet the following requirements:
 1. Clone the repository to your local machine:
 
     ```
-    git clone <repository-url>
+    git clone https://github.com/codein-artout/socket-backend-challenge.git
     ```
 
 2. Navigate to the project directory:
@@ -111,7 +111,7 @@ To retrieve the timeseries data in a location within a specific time range, you 
 GET http://localhost:8080/weather/timeseries?type=<type>&location=<location>&FROM=<start_date>&TO=<end_date>
 ```
 
-Use API Key =>  `Authorizztion Header: SocketTech`
+Use API Key =>  `Authorization Header: SocketTech`
 
 Note: For this project, two types (Temperature, Humidity) and two locations (London, Bangalore) have been implemented. The design is flexible, making it easy to add new sensor types and locations.
 
