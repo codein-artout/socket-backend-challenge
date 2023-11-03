@@ -111,7 +111,7 @@ To retrieve the timeseries data in a location within a specific time range, you 
 GET http://localhost:8080/weather/timeseries?type=<type>&location=<location>&FROM=<start_date>&TO=<end_date>
 ```
 
-Use API Key =>  `Authorization Header: SocketTech`
+Use API Key as Header =>  `Authorization: SocketTech`
 
 Note: For this project, two types (Temperature, Humidity) and two locations (London, Bangalore) have been implemented. The design is flexible, making it easy to add new sensor types and locations.
 
