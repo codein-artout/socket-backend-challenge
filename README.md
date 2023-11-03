@@ -16,7 +16,7 @@ This documentation provides an overview of the backend for a real-time weather d
 9. [Testing Structure](#testing-structure)
 10. [Improvements](#improvements-before-prod-release)
 
-Project Setup & Run
+Project Setup
 -------------
 
 ## Requirements
