@@ -217,6 +217,10 @@ Testing Structure
 -----------------
 
 Unit tests are organized in the `tests` directory, following the same structure as the `src` directory. Tests are categorized by components, such as controllers, port adapters, repositories, services, and routes.
+```
+npm run test
+```
+Exexcute above command inside `Weather API` folder to run the test suite with coverage.
 
 
 Improvements before Prod Release
