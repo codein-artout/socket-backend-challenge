@@ -30,8 +30,6 @@ describe('WeatherService', () => {
     const measuredAt = new Date('2023-01-15T12:00:00');
 
     // When
-
-    // await expect(weatherService.save(sensorId, value, measuredAt)).resolves.toBeUndefined();
     await weatherService.save(sensorId, value, measuredAt);
 
     // Then

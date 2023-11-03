@@ -220,7 +220,8 @@ Unit tests are organized in the `tests` directory, following the same structure 
 ```
 npm run test
 ```
-Exexcute above command inside `Weather API` folder to run the test suite with coverage.
+Exexcute above command inside `Weather API` folder to run the test suite with coverage. Below is a screenshot:
+![Test Coverage](./test-coverage.png)
 
 
 Improvements before Prod Release

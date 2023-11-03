@@ -18,7 +18,7 @@ describe('SensorRepository', () => {
 
   it('should save sensor data successfully', async () => {
 
-    // Define test data
+    // Given
     const type = SensorType.TEMPERATURE;
     const location = Location.LONDON;
     const serialNumber = '12345';

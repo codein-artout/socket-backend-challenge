@@ -46,15 +46,15 @@ describe('WeatherController', () => {
   });
 
    it('should return a 400 error when type or location is missing', async () => {
-    // Arrange
+    // Given
     mockRequest.query = {
       type: 'TEMPERATURE'
     };
 
-    // Act
+    // When
     await WeatherController.getAverageData(mockRequest as Request, mockResponse as Response);
 
-    // Assert
+    // Then
     expect(mockResponse.status).toHaveBeenCalledWith(400);
     expect(mockResponse.json).toHaveBeenCalledWith({
       error: 'Type and location are required.',
@@ -76,7 +76,7 @@ describe('WeatherController', () => {
     // When
     await WeatherController.getAverageData(mockRequest as Request, mockResponse as Response);
 
-    // Assert
+    // Then
     expect(mockResponse.status).toHaveBeenCalledWith(404);
     expect(mockResponse.json).toHaveBeenCalledWith({
       error: 'No average data found.',
@@ -127,15 +127,15 @@ describe('WeatherController', () => {
     });
   
     it('should return a 400 error when type or location is missing', async () => {
-      // Arrange
+      // Given
       mockRequest.query = {
         type: 'TEMPERATURE',
       };
   
-      // Act
+      // When
       await WeatherController.getTimeseriesData(mockRequest as Request, mockResponse as Response);
   
-      // Assert
+      // Then
       expect(mockResponse.status).toHaveBeenCalledWith(400);
       expect(mockResponse.json).toHaveBeenCalledWith({
         error: 'Type and location are required.',
@@ -155,7 +155,7 @@ describe('WeatherController', () => {
       // When
       await WeatherController.getTimeseriesData(mockRequest as Request, mockResponse as Response);
   
-      // Assert
+      // Then
       expect(mockResponse.status).toHaveBeenCalledWith(404);
       expect(mockResponse.json).toHaveBeenCalledWith({
         error: 'No timeseries data found.',
